@@ -1,1 +1,39 @@
 [2020-08-12 09:28:57,213] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /warn_realtion/ HTTP/1.1" 200 19147
+[2020-08-12 09:39:26,189] [basehttp.py:124] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 67
+[2020-08-12 09:39:26,675] [base.py:93] [base:get_response] [WARNING]- Not Found: /favicon.ico
+[2020-08-12 09:39:26,676] [basehttp.py:124] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 85
+[2020-08-12 09:41:58,260] [exception.py:118] [exception:handle_uncaught_exception] [ERROR]- Internal Server Error: /check_rule
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/dengqian/PycharmProjects/check_rule/warn_relaction_interface/view.py", line 23, in check_rule
+    rule_data = json.loads(json_str)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2020-08-12 09:41:58,275] [basehttp.py:124] [basehttp:log_message] [ERROR]- "POST /check_rule HTTP/1.1" 500 27
+[2020-08-12 09:43:24,015] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 54
+[2020-08-12 09:47:35,675] [view.py:34] [view:check_rule] [ERROR]- Invalid control character at: line 1 column 57 (char 56)
+[2020-08-12 09:47:35,677] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 63
+[2020-08-12 09:48:07,700] [view.py:34] [view:check_rule] [ERROR]- Invalid control character at: line 1 column 57 (char 56)
+[2020-08-12 09:48:07,701] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 63
+[2020-08-12 09:50:27,448] [view.py:34] [view:check_rule] [ERROR]- 'bytes' object has no attribute 'resu'
+[2020-08-12 09:50:27,451] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 63
+[2020-08-12 09:53:38,012] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 54
+[2020-08-12 09:54:21,192] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 54
+[2020-08-12 10:53:33,300] [view.py:47] [view:check_rule] [ERROR]- Unable to open file (unable to open file: name = './model/model_20200812_104239.h', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+[2020-08-12 10:53:33,302] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 63
+[2020-08-12 10:55:38,752] [view.py:47] [view:check_rule] [ERROR]- Unable to open file (unable to open file: name = '/Users/dengqian/PycharmProjects/check_rule/warn_relaction_interface/model/model_20200812_104239.h', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+[2020-08-12 10:55:38,761] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 63
+[2020-08-12 10:56:52,228] [view.py:47] [view:check_rule] [ERROR]- Unable to open file (unable to open file: name = '/Users/dengqian/PycharmProjects/check_rule/model/model_20200812_104239.h', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+[2020-08-12 10:56:52,230] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 63
+[2020-08-12 10:57:19,723] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 54
+[2020-08-12 10:58:55,144] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 3407

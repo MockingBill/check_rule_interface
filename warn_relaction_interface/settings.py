@@ -141,16 +141,16 @@ USE_L10N = True
 USE_TZ = False
 
 STATIC_URL = '/static/'
-STATIC_ROOT=os.path.join(BASE_DIR,'static')
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
 FILE_UPLOAD_MAX_MEMORY_SIZE = 26214400
 DATA_UPLOAD_MAX_MEMORY_SIZE = 26214400
 
 PROCESS_URL = os.path.join(BASE_DIR, 'logs', 'process')
-DWON_RESU_URL = os.path.join(BASE_DIR, 'static','download')
-UPLOAD_URL=os.path.join(BASE_DIR, 'static','upload')
+DWON_RESU_URL = os.path.join(BASE_DIR, 'static', 'download')
+UPLOAD_URL = os.path.join(BASE_DIR, 'static', 'upload')
+MODEL_URL = os.path.join(BASE_DIR, 'model')
 if not os.path.exists(PROCESS_URL): os.mkdir(PROCESS_URL)
 if not os.path.exists(DWON_RESU_URL): os.mkdir(DWON_RESU_URL)
 if not os.path.exists(MEDIA_ROOT): os.mkdir(MEDIA_ROOT)
