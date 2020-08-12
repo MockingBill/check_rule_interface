@@ -38,7 +38,7 @@ def check_rule(req):
 
             return HttpResponse(json.dumps({
                 "code": 200,
-                "msg": "no other",
+                "msg": "success",
                 "body": {
                     "resu": json.dumps(resu_data)
                 }
