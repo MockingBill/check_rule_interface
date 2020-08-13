@@ -1,0 +1,16 @@
+[2020-08-13 10:49:03,569] [view.py:37] [view:check_rule] [ERROR]- 'resu'
+[2020-08-13 10:49:03,570] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 63
+[2020-08-13 10:49:36,043] [view.py:37] [view:check_rule] [ERROR]- the JSON object must be str, bytes or bytearray, not 'list'
+[2020-08-13 10:49:36,049] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 63
+[2020-08-13 10:50:23,324] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 3242
+[2020-08-13 10:50:29,663] [view.py:37] [view:check_rule] [ERROR]- the JSON object must be str, bytes or bytearray, not 'list'
+[2020-08-13 10:50:29,665] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 63
+[2020-08-13 10:50:46,162] [view.py:37] [view:check_rule] [ERROR]- Expecting ',' delimiter: line 1 column 15 (char 14)
+[2020-08-13 10:50:46,164] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 63
+[2020-08-13 10:50:56,229] [view.py:37] [view:check_rule] [ERROR]- Expecting value: line 1 column 11 (char 10)
+[2020-08-13 10:50:56,231] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 63
+[2020-08-13 10:51:18,851] [view.py:37] [view:check_rule] [ERROR]- Expecting ',' delimiter: line 1 column 15 (char 14)
+[2020-08-13 10:51:18,852] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 63
+[2020-08-13 10:52:32,444] [view.py:38] [view:check_rule] [ERROR]- the JSON object must be str, bytes or bytearray, not 'list'
+[2020-08-13 10:52:32,446] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 63
+[2020-08-13 10:53:00,103] [basehttp.py:124] [basehttp:log_message] [INFO]- "POST /check_rule HTTP/1.1" 200 2393

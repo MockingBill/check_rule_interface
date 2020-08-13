@@ -1,20 +1,10 @@
 from django.http import HttpResponse
 from . import settings
-
-from .core import systen_unit as su
-import threading
 import os
-import re
 from keras.utils import to_categorical
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import OneHotEncoder
-from numpy import argmax
 import numpy as np
-from tensorflow import keras
-from numpy import array
-import tensorflow as tf
-from tensorflow.keras.layers import Dense, Input, Flatten, Dropout
-from tqdm import tqdm
 from tensorflow import keras
 import json
 import logging
@@ -33,8 +23,9 @@ def check_rule(req):
     if req.method == "POST" and req.body != None:
         try:
             rule_data = json.loads(req.body)
-            rules = json.loads(rule_data['resu'])
-            resu_data=do_check_rule(rules)
+            print(rule_data)
+
+            resu_data=do_check_rule(rule_data['resu'])
 
             return HttpResponse(json.dumps({
                 "code": 200,
